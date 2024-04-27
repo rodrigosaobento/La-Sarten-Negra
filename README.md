@@ -1,9 +1,9 @@
 # La-Sarten-Negra
-Trabajo Practico para Codo a Codo Node JS Comisión 24141 Grupo 15
-Integrantes:
-Rodrigo Joaquín Saoe Bento
 
 Trabajo Practico para el curso NODE JS comisión 24141 2024 de Codo a Codo Grupo 15. Esta primera parte incluye el FRONT.
+
+Integrantes:
+Rodrigo Joaquín Saoe Bento
 
 La página tiene una tematica de un restaurante familiar donde podes consultar la carta, opiniones de clientes satisfechos, la direccion de todas sus sucursales y un formulario donde podes dejar tu opinion y suscribirte para recibir novedades y ofertas.
 
