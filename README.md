@@ -7,8 +7,6 @@ La página tiene una tematica de un restaurante familiar donde podes consultar l
 
 En este trabajo se maqueto una One Page en HTML, una terminada se le agrego imagenes e íconos para mejorar su aoparience para el lector. Finalmente se le dio una estructura Responsive en css con la mentalidad "Mobile First" para que tenga una amplia compatibilidad con dispositivos tantos móviles como computadoras. Para lo visual se implemento una paleta de colores agradable utilizando colores complementarios.
 
-#Paleta de Colores: "placeholder"
-
 Tipografias 'Roboto' y 'Satisfy' de Google Fonts.
 
 Para sus iconos se utilizó FontAwesome. El HTML pasó exitosamente la validación de Validator W3C sin errores ni advertencias.
