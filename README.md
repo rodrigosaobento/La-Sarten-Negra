@@ -3,7 +3,7 @@
 Trabajo Practico para el curso NODE JS comisión 24141 2024 de Codo a Codo Grupo 15. Esta primera parte incluye el FRONT.
 
 Integrantes:
-Rodrigo Joaquín Saoe Bento
+Rodrigo Joaquín Sae Bento, Alexis villca, Pamela Conti y Jeremías Vivas
 
 La página tiene una tematica de un restaurante familiar donde podes consultar la carta, opiniones de clientes satisfechos, la direccion de todas sus sucursales y un formulario donde podes dejar tu opinion y suscribirte para recibir novedades y ofertas.
 
