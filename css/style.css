@@ -1,652 +1,633 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-
-
 
 .contenedor {
-    padding: 60px 0px;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+  padding: 60px 0px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .titulo {
-    color: #3d1b0d;
-    font-size: 40px;
-    font-weight:900;
-    text-align: center;
-    margin-bottom: 60px;
-    font-family: 'Roboto', sans-serif;
-
-
+  color: #3d1b0d;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "Roboto", sans-serif;
 }
-
 
 /* BANNER - NAV BAR */
 
-header{
-    width: 100%;
-    height: 700px;
-    background: url(../img/cooking-banner-7166200_1280.jpg);
-    background-size:cover;
-    position: relative;
+header {
+  width: 100%;
+  height: 700px;
+  background: url(../img/cooking-banner-7166200_1280.jpg);
+  background-size: cover;
+  position: relative;
 }
 
-
-nav{
-    padding: 20px 20px;
-    text-align: center;
-    background-color: #d6531b;
-    
-
-    
+nav {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #d6531b;
 }
 
-nav > a{
-    color:#3d1b0d;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 60px;
-    font-size: 25px;
+nav > a {
+  color: #3d1b0d;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 60px;
+  font-size: 25px;
 }
 
-nav > a:hover{
-    color: #f0e3dd;
+nav > a:hover {
+  color: #f0e3dd;
 }
 
-header .textos-header{
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.textos-header h1{
-    font-size: 80px;
-    color: #3d1b0d;
-    text-shadow: #fcf8ee 2px 5px;
-    font-family: "Satisfy", cursive;
-
-
+.textos-header h1 {
+  font-size: 80px;
+  color: #3d1b0d;
+  width: 100%;
+  font-family: "Satisfy", cursive;
+  background: linear-gradient(
+    -45deg,
+    #dfb79e,
+    #dfb79e,
+    #2b0413,
+    #2b0413,
+    #e25d52,
+    #e25d52
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 6s ease-in-out infinite;
+  -moz-animation: animated_text 6s ease-in-out infinite;
+  -webkit-animation: animated_text 6s ease-in-out infinite;
+}
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 
-.textos-header h2{
-    font-family: "Satisfy";
-    font-size: 60px;
-    font-weight: 300;
-    color:#292323;
-    text-shadow: #f4eeee 2px 3px;
+.textos-header h2 {
+  font-family: "Satisfy";
+  font-size: 60px;
+  font-weight: 300;
+  color: #292323;
+  text-shadow: #f4eeee 2px 3px;
 }
 
 /* SOBRE NOSOTROS */
 
-main .sobre-nosotros{
-    padding: 30px 0 60px 0;
+main .sobre-nosotros {
+  padding: 30px 0 60px 0;
 }
-.contenedor-sobre-nosotros{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.img-about-us{
-    width: 50%;
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.sobre-nosotros .contenido-textos{
-    width: 48%;
+.img-about-us {
+  width: 50%;
 }
 
-.contenido-textos p{
-    margin: 10px;
-    padding: 20px;
-    font-weight: 300;
-    text-align: justify;
-    color: black;
+.sobre-nosotros .contenido-textos {
+  width: 48%;
+}
+
+.contenido-textos p {
+  margin: 10px;
+  padding: 20px;
+  font-weight: 300;
+  text-align: justify;
+  color: black;
 }
 
 /* CARTA */
 
-.carta{
-    background: #f0b87d;
-
+.carta {
+  background: #f0b87d;
 }
 
-.img-carta{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    bottom: 50px;
+.img-carta {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  bottom: 50px;
 }
 
-.img-cart{
-    width: 15%;
-    margin-bottom: 30px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin: 5px;
+.img-cart {
+  width: 15%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin: 5px;
 }
 
-.img-cart> img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.img-cart > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    /* Efecto en las imagenes*/
-    transform: scale(0);
-    background:#f97416a2;
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* Efecto en las imagenes*/
+  transform: scale(0);
+  background: #f97416a2;
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hover-galeria img{
-    width: 50px;
+.hover-galeria img {
+  width: 50px;
 }
 
-.hover-galeria p{
-    color: #fff;
+.hover-galeria p {
+  color: #fff;
 }
 
-.img-cart:hover .hover-galeria{
-    transform: scale(1);
+.img-cart:hover .hover-galeria {
+  transform: scale(1);
 }
 
 /* RESEÑAS DE CLIENTES */
 
-.cards{
-    display: flex;
-    justify-content: space-evenly;
+.cards {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.cards .card{
-    background: #fb923c;
-    display: flex;
-    width: 50%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(24, 171, 149, 0.6);
-    margin: 10px;
-    padding: 20px;
+.cards .card {
+  background: #fb923c;
+  display: flex;
+  width: 50%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(24, 171, 149, 0.6);
+  margin: 10px;
+  padding: 20px;
 }
 
-.cards .card img{
-    width: 95px;
-    height: 95px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
+.cards .card img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
 }
 
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
+.cards .card > .contenido-texto-card {
+  width: 60%;
+  color: #fff;
 }
 
-.cards .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-    padding-left: 6px;
+.cards .card > .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+  padding-left: 6px;
 }
 
 .rating {
-    font-weight:bolder;
-    font-size: 20px;
-    letter-spacing: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  letter-spacing: 10px;
 }
 
 /* SUCURSALES - GOOGLE MAPS*/
 
-.sucursales{
-    background: #fed7aa;
-    padding-bottom: 30px;
+.sucursales {
+  background: #fed7aa;
+  padding-bottom: 30px;
 }
 
-
-.sucursal-cont{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.sucursal-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sucursal-card{
-    width: 28%;
-    text-align: center;
+.sucursal-card {
+  width: 28%;
+  text-align: center;
 }
 
-.sucursal-card img{
-    width: 40%;
+.sucursal-card img {
+  width: 40%;
 }
 
-.sucursal-card h3{
-    margin: 10px 0;
+.sucursal-card h3 {
+  margin: 10px 0;
 }
 
-.sucursal-card p{
-    font-weight: 300;
-    text-align: justify;
+.sucursal-card p {
+  font-weight: 300;
+  text-align: justify;
 }
 
 /* FORMULARIO REGISTRO */
 
-.formulario-registro{
-    background-color: #ffa663c6;
+.formulario-registro {
+  background-color: #ffa663c6;
 }
 
 .formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .formulario__label {
-    display: block;
-    font-weight: 700;
-    padding: 10px;
-    cursor: pointer;
-    margin: 2px;
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+  margin: 2px;
 }
 
 .formulario__grupo-input {
-    position: relative;
+  position: relative;
 }
 
 .formulario__input {
-    width: 100%;
-    background-color: white;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 40px 0 10px;
-    transition: .3s ease all;
+  width: 100%;
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
 }
 
-.formulario__comentario{
-    width: 100%;
-    background-color: white;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 40px 0 10px;
-    transition: .3s ease all;
-
+.formulario__comentario {
+  width: 100%;
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
 }
 
 .formulario__input:focus {
-    border: 3px solid #000000;
-    outline: none;
-    box-shadow: 2px 0px 10px #9e9797;
+  border: 3px solid #000000;
+  outline: none;
+  box-shadow: 2px 0px 10px #9e9797;
 }
 
-.formulario__grupo-btn-enviar  {
-    display: flex;
-    align-items: center;
+.formulario__grupo-btn-enviar {
+  display: flex;
+  align-items: center;
 }
 
 .formulario__btn {
-    margin: 20px;
-    height: 45px;
-    line-height: 45px;
-    width: 30%;
-    background-color: #fb923c;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition:  .1s ease all;
-
+  margin: 20px;
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background-color: #fb923c;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s ease all;
 }
 
 .formulario__btn:hover {
-    box-shadow: 3px 0px 20px  #ffffff;
-
+  box-shadow: 3px 0px 20px #ffffff;
 }
-
 
 /* FOOTER */
 
-footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
 }
 
-.content-footer{
-    text-align: center;
+.content-footer {
+  text-align: center;
 }
- .content-footer i{
-    color: #fff;
-    border-bottom: 5px solid #F7FF93;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-} 
-
-
-.content-footer p{
-    color: #ccc;
+.content-footer i {
+  color: #fff;
+  border-bottom: 5px solid #f7ff93;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.pie-pagina{
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
+.content-footer p {
+  color: #ccc;
+}
+
+.pie-pagina {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
 }
 
 /* RESPONSIVE TABLET */
 
-@media (461px <= width <= 768px){
-   
-    header{
-        background-position: center;
-        width: 100%;
-        height: 700px;
-        background: url(../img/cooking-banner-7166200_1280.jpg);
-        background-size:cover;
-        position: relative;
-    }
+@media (461px <= width <= 768px) {
+  header {
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    background: url(../img/cooking-banner-7166200_1280.jpg);
+    background-size: cover;
+    position: relative;
+  }
 
-    .contenedor-sobre-nosotros{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    nav{
-        text-align: center;
-        padding: 30px;
-    }
+  nav {
+    text-align: center;
+    padding: 30px;
+  }
 
-    nav > a{
-        margin: 11px;
-        font-size: 25px;
-        
-    }
+  nav > a {
+    margin: 11px;
+    font-size: 25px;
+  }
 
+  .sobre-nosotros .contenido-textos {
+    width: 90%;
+    margin: 20px;
+  }
 
-    .sobre-nosotros .contenido-textos{
-        width: 90%;
-        margin: 20px;
-    }
+  .contenido-textos p {
+    font-size: 20px;
+    font-weight: 350;
+  }
 
-    .contenido-textos p{
-     font-size: 20px;
-     font-weight: 350;
-    }
+  .imagen-about-us {
+    width: 90%;
+  }
 
-    .imagen-about-us{
-        width: 90%;
-    }
+  /* Imagenes */
 
-    /* Imagenes */
+  .img-cart {
+    width: 44%;
+  }
 
-    .img-cart{
-        width: 44%;
-    }
+  /* Cards clientes */
 
-    /* Cards clientes */
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .cards .card {
+    width: 90%;
+  }
 
-    .cards .card{
-        width: 90%;
-    }
+  .cards .card:first-child {
+    margin-bottom: 30px;
+  }
 
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    }
+  .img-cart {
+    width: 300px;
+    height: 200px;
+  }
 
-    .img-cart{
-        width: 300px;
-        height: 200px;
-    }
+  .hover-galeria p {
+    font-size: 30px;
+  }
 
-    .hover-galeria p{
-        font-size: 30px;
-    }
+  /* Sucursales */
 
-    /* Sucursales */
+  .sucursal-cont {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .sucursal-cont{
-        justify-content: center;
-        flex-direction: column;
-    }
+  .sucursal-card {
+    width: 100%;
+    text-align: center;
+  }
 
-    .sucursal-card{
-        width: 100%;
-        text-align: center;
-    }
+  .sucursal-card:nth-child(1),
+  .sucursal-card:nth-child(2) {
+    margin-bottom: 60px;
+  }
 
-    .sucursal-card:nth-child(1), .sucursal-card:nth-child(2){
-        margin-bottom: 60px;
-    }
+  .sucursal-card img {
+    width: 90%;
+  }
 
-    .sucursal-card img{
-        width: 90%;
-    }
+  .sucursal-card p {
+    text-align: center;
+  }
 
-    .sucursal-card p {
-        text-align: center;
-    }
+  /*Formulario*/
 
-    /*Formulario*/ 
+  .formulario-registro h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
 
-    .formulario-registro h2{
-        font-size: 20px;
-        padding: 10px;
-    }
+  .formulario {
+    grid-template-columns: 1fr;
+  }
 
-    .formulario {
-        grid-template-columns: 1fr;
-    }
+  .formulario__grupo-terminos,
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: 1;
+  }
 
-    .formulario__grupo-terminos,
-    .formulario__mensaje,
-    .formulario__grupo-btn-enviar {
-        grid-column: 1;
-    }
-
-    .formulario__btn {
-        width: 100%;
-    }
-
-
+  .formulario__btn {
+    width: 100%;
+  }
 }
-
 
 /* RESPONSIVE CELULAR */
 
-
-@media (100px <= width <= 460px){
-   nav{
-       display: none;
-    }
-
-    .textos-header h1{
-        margin: 120px 0px 80px 0px;
-        font-size: 60px;
-    }
-
-    .textos-header h2{
-        margin: 50px 0px 0px 0px;
-        font-size: 40px;
-    }
-
-    /* Sobre nosotros */
-
-
-    .contenedor-sobre-nosotros{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .img-about-us{
-        
-        width: 100%;
-    }
-
-    .sobre-nosotros .contenido-textos{
-        width: 100%;
-        margin: 20px;
-    }
-
-   .contenido-textos p{
-    font-size: 20px;
-    width: 280px;
-    text-align: center;
-   }
-
-   
-
-    /* Carta  */
-
-    .img-carta{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .img-cart{
-        width: 300px;
-        height: 200px;
-    }
-
-    .hover-galeria p{
-        font-size: 30px;
-    }
-
-    
-
-    
-    
-
-    /* Cards clientess */
-
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card{
-        height: 350px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .cards .card img{
-        width: 150px;
-        height: 150px;
-    }
-
-    /* Sucrsales */
-
-  .sucursal-cont{
-    flex-direction: column;
-    
+@media (100px <= width <= 460px) {
+  nav {
+    display: none;
   }
 
-  .sucursal-card{
+  .textos-header h1 {
+    margin: 200px 0px 30px 0px;
+    font-size: 60px;
+  }
+
+  .textos-header h2 {
+    margin: 50px 0px 0px 0px;
+    font-size: 40px;
+  }
+
+  /* Sobre nosotros */
+
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
-  .sucursal-card p{
+  .img-about-us {
+    width: 100%;
+  }
+
+  .sobre-nosotros .contenido-textos {
+    width: 100%;
     margin: 20px;
   }
-    /* Formulario */
 
-    .formulario-registro h2{
-        font-size: 25px;
-        padding: 10px;
-        text-align: center;
-        
-       
+  .contenido-textos p {
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+  }
 
-    }
+  /* Carta  */
 
-    .formulario{
-        grid-template-columns: 1fr;
-    }
+  .img-carta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    
+  .img-cart {
+    width: 300px;
+    height: 200px;
+  }
 
-    /* Footer */
+  .hover-galeria p {
+    font-size: 30px;
+  }
 
-    .contenedor-footer{
-        flex-direction: column;
-        border: none;
-    }
+  /* Cards clientess */
 
-    .content-footer{
-        margin-bottom: 20px;
-        text-align: center;
-    }
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .content-footer i{
-        border: none;
-    }
+  .cards .card {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .content-footer p{
-        color: #ccc;
-        border-bottom: 1px solid #ff8000;
-        padding-bottom: 20px;
-    }
+  .cards .card img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .pie-pagina{
-        font-size: 20px;
-    }
+  /* Sucrsales */
+
+  .sucursal-cont {
+    flex-direction: column;
+  }
+
+  .sucursal-card {
+    width: 100%;
+  }
+
+  .sucursal-card p {
+    margin: 20px;
+  }
+  /* Formulario */
+
+  .formulario-registro h2 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+  }
+
+  .content-footer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .content-footer i {
+    border: none;
+  }
+
+  .content-footer p {
+    color: #ccc;
+    border-bottom: 1px solid #ff8000;
+    padding-bottom: 20px;
+  }
+
+  .pie-pagina {
+    font-size: 20px;
+  }
 }
