@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -54,6 +58,30 @@ nav > a {
 
 nav > a:hover {
   color: #f0e3dd;
+}
+
+/* Scroll-Top-Button */
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 0.1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  font-weight: bold;
+  background-color: #fb923c;
+  color: #353535;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  color: #fb923c;
+  background-color: #353535;
 }
 
 header .textos-header {
