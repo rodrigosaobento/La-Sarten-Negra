@@ -226,11 +226,13 @@
               <label for="usuario" class="formulario__label">Usuario</label>
               <div class="formulario__grupo-input">
                 <input
-                  type="text"
                   class="formulario__input"
                   name="usuario"
                   id="usuario"
                   placeholder="Nombre de Usuario"
+                  type="text"
+                  minlength="3"
+                  required
                 />
               </div>
             </div>
@@ -248,6 +250,8 @@
                   name="nombre"
                   id="nombre"
                   placeholder="Escriba su nombre "
+                  minlength="5"
+                  required
                 />
               </div>
             </div>
@@ -275,8 +279,10 @@
                   class="formulario__input"
                   name="edad"
                   id="edad"
-                  min="1"
+                  min="10"
                   max="99"
+                  minlength="2"
+                  required
                 />
               </div>
             </div>
@@ -292,6 +298,9 @@
                   name="password"
                   id="password"
                   placeholder="Escribir contraseña"
+                  minlength="6"
+                  maxlength="10"
+                  required
                 />
               </div>
             </div>
@@ -308,6 +317,9 @@
                   name="password2"
                   id="password2"
                   placeholder="Repitar contraseña"
+                  minlength="6"
+                  maxlength="10"
+                  required
                 />
               </div>
             </div>
@@ -325,6 +337,8 @@
                   name="correo"
                   id="correo"
                   placeholder="Escribir su e-mail."
+                  minlength="5"
+                  required
                 />
               </div>
             </div>
@@ -339,6 +353,8 @@
                   class="formulario__input"
                   name="telefono"
                   id="telefono"
+                  minlength="5"
+                  required
                 />
               </div>
             </div>
@@ -369,6 +385,7 @@
                   type="checkbox"
                   name="terminos"
                   id="terminos"
+                  required
                 />
                 Acepto los Terminos y Condiciones
               </label>
