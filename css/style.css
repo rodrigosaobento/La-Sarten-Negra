@@ -225,23 +225,23 @@ main .sobre-nosotros {
 }
 
 #card-entradas {
-  background: url(../img/entrada.jpg) center;
+  background: url(/img/entrada.jpg) center;
   background-size: cover;
 }
 #card-pizza {
-  background: url(../img/pizza-3010062_1280.jpg) center;
+  background: url(/img/pizza-3010062_1280.jpg) center;
   background-size: cover;
 }
 #card-milanesas {
-  background: url(../img/03_Milanesa_de_Pollo_con_Papas_Fritas.jpg) center;
+  background: url(/img/03_Milanesa_de_Pollo_con_Papas_Fritas.jpg) center;
   background-size: cover;
 }
 #card-pastas {
-  background: url(../img/ravioli-7379303_1280.jpg) center;
+  background: url(/img/ravioli-7379303_1280.jpg) center;
   background-size: cover;
 }
 #card-postres {
-  background: url(../img/pancakes-2291908_1280.jpg) center;
+  background: url(/img/pancakes-2291908_1280.jpg) center;
   background-size: cover;
 }
 .texto_tarjeta-rest {
