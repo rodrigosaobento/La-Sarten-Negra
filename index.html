@@ -15,14 +15,16 @@
   <body>
     <header>
       <!-- NAV BAR -->
-      <nav id="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#about-us">Nosotros</a>
-        <a href="#carta">Carta</a>
-        <a href="#reseñas">Reseñas</a>
-        <a href="#sucursales">Sucursales</a>
-        <a href="#contact">Contacto</a>
-      </nav>
+      <div class="nav-bg">
+        <nav id="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#about-us">Nosotros</a>
+          <a href="#nuestromenu">Carta</a>
+          <a href="#reseñas">Reseñas</a>
+          <a href="#sucursales">Sucursales</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
 
       <!-- BUTTON BACK TO TOP -->
       <a href="#nav">
@@ -68,57 +70,98 @@
       </section>
 
       <!-- Carta -->
-
-      <section class="carta" id="carta">
-        <div class="contenedor">
-          <h2 class="titulo">Nuestra Carta</h2>
-          <div class="img-carta">
-            <div class="img-cart">
-              <img src="./img/entrada.jpg" alt="Entradas" />
-              <div class="hover-galeria">
-                <p>Entradas</p>
+    <section class="section-tarjetas">
+      <h3 class="section_tarjetas-h3" id="nuestromenu">Nuestro Menu</h3>
+      <div class="main-tarjetas">
+        <div class="wrap column-4 columns">
+          
+          <!-- TARJETA ENTRADAS-->
+          <div class="tarjeta-rest" id="card-entradas">
+            <div class="texto_tarjeta-rest">
+              <h3>Entradas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam distinctio dignissimos, sequi corporis nobis voluptate inventore, quisquam est illo perspiciatis cupiditate? Ducimus, ea sapiente?
+              <div class="cuenta_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>5$</span>
+                </div>
+                <div class="pedir_tarjeta-rest">
+                  <a href="">Pedir ahora</a>
+                </div>
               </div>
-            </div>
-            <div class="img-cart">
-              <img
-                src="./img/cheeseburger-8678826_1280.jpg"
-                alt="hamburguesas"
-              />
-              <div class="hover-galeria">
-                <p>Hamburguesas</p>
-              </div>
-            </div>
-            <div class="img-cart">
-              <img
-                src="./img/03_Milanesa_de_Pollo_con_Papas_Fritas.jpg"
-                alt="Milanesas"
-              />
-              <div class="hover-galeria">
-                <p>Milanesas</p>
-              </div>
-            </div>
-
-            <div class="img-cart">
-              <img src="./img/pizza-3010062_1280.jpg" alt="Pizzas" />
-              <div class="hover-galeria">
-                <p>Pizzas</p>
-              </div>
-            </div>
-            <div class="img-cart">
-              <img src="./img/ravioli-7379303_1280.jpg" alt="Pastas" />
-              <div class="hover-galeria">
-                <p>Pastas</p>
-              </div>
-            </div>
-            <div class="img-cart">
-              <img src="./img/pancakes-2291908_1280.jpg" alt="Postres" />
-              <div class="hover-galeria">
-                <p>Postres</p>
-              </div>
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+
+          <!-- TARJETA PIZZAS-->
+          <div class="tarjeta-rest" id="card-pizza">
+            <div class="texto_tarjeta-rest">
+              <h3>Pizzas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam distinctio dignissimos, sequi corporis nobis voluptate inventore, quisquam est illo perspiciatis cupiditate? Ducimus, ea sapiente?
+              <div class="cuenta_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>12$</span>
+                </div>
+                <div class="pedir_tarjeta-rest">
+                  <a href="">Pedir ahora</a>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+
+          <!-- TARJETA MILANESAS -->
+          <div class="tarjeta-rest" id="card-milanesas">
+            <div class="texto_tarjeta-rest">
+              <h3>Milanesas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam distinctio dignissimos, sequi corporis nobis voluptate inventore, quisquam est illo perspiciatis cupiditate? Ducimus, ea sapiente?
+              <div class="cuenta_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>12$</span>
+                </div>
+                <div class="pedir_tarjeta-rest">
+                  <a href="">Pedir ahora</a>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+
+          <!-- TARJETA PASTAS -->
+          <div class="tarjeta-rest" id="card-pastas">
+            <div class="texto_tarjeta-rest">
+              <h3>Pastas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam distinctio dignissimos, sequi corporis nobis voluptate inventore, quisquam est illo perspiciatis cupiditate? Ducimus, ea sapiente?
+              <div class="cuenta_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>15$</span>
+                </div>
+                <div class="pedir_tarjeta-rest">
+                  <a href="">Pedir ahora</a>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+
+          <!-- TARJETA POSTRES -->
+          <div class="tarjeta-rest" id="card-postres">
+            <div class="texto_tarjeta-rest">
+              <h3>Postres</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam distinctio dignissimos, sequi corporis nobis voluptate inventore, quisquam est illo perspiciatis cupiditate? Ducimus, ea sapiente?
+              <div class="cuenta_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>8$</span>
+                </div>
+                <div class="pedir_tarjeta-rest">
+                  <a href="">Pedir ahora</a>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+
+          
+        </section>
 
       <!-- RESEÑAS -->
       <section class="cont reseñas" id="reseñas">
