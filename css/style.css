@@ -59,8 +59,9 @@ header {
 }
 
 nav {
-  padding: 20px 20px;
-  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav > a {
@@ -231,23 +232,23 @@ main .sobre-nosotros {
 }
 
 #card-entradas {
-  background: url(/img/entrada.jpg) center;
+  background: url(../img/entrada.jpg) center;
   background-size: cover;
 }
 #card-pizza {
-  background: url(/img/pizza-3010062_1280.jpg) center;
+  background: url(../img/pizza-3010062_1280.jpg) center;
   background-size: cover;
 }
 #card-milanesas {
-  background: url(/img/03_Milanesa_de_Pollo_con_Papas_Fritas.jpg) center;
+  background: url(../img/03_Milanesa_de_Pollo_con_Papas_Fritas.jpg) center;
   background-size: cover;
 }
 #card-pastas {
-  background: url(/img/ravioli-7379303_1280.jpg) center;
+  background: url(../img/ravioli-7379303_1280.jpg) center;
   background-size: cover;
 }
 #card-postres {
-  background: url(/img/pancakes-2291908_1280.jpg) center;
+  background: url(../img/pancakes-2291908_1280.jpg) center;
   background-size: cover;
 }
 .texto_tarjeta-rest {
@@ -288,23 +289,6 @@ main .sobre-nosotros {
 .precio_tarjeta-rest span {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-/* RESPONSIVE TARJETAS */
-@media (max-width: 1024px) {
-  .main-tarjetas .column-4 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .main-tarjetas .column-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .main.tarjetas .column-4 {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 /* RESEÑAS DE CLIENTES */
@@ -519,6 +503,29 @@ form label span {
   text-align: center;
 }
 
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1024px) {
+  .section-contact {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .section-contact {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .section-contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -566,45 +573,6 @@ footer {
 /* RESPONSIVE TABLET */
 
 @media (461px <= width <= 768px) {
-  header {
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    background: url(../img/cooking-banner-7166200_1280.jpg);
-    background-size: cover;
-    position: relative;
-  }
-
-  .contenedor-sobre-nosotros {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav {
-    text-align: center;
-    padding: 30px;
-  }
-
-  nav > a {
-    margin: 11px;
-    font-size: 25px;
-  }
-
-  .sobre-nosotros .contenido-textos {
-    width: 90%;
-    margin: 20px;
-  }
-
-  .contenido-textos p {
-    font-size: 20px;
-    font-weight: 350;
-  }
-
-  .imagen-about-us {
-    width: 90%;
-  }
-
   /* Imagenes */
 
   .img-cart {
@@ -664,44 +632,6 @@ footer {
   /* RESPONSIVE CELULAR */
 
   @media (100px <= width <= 460px) {
-    nav {
-      display: none;
-    }
-
-    .textos-header h1 {
-      margin: 200px 0px 30px 0px;
-      font-size: 60px;
-    }
-
-    .textos-header h2 {
-      margin: 50px 0px 0px 0px;
-      font-size: 40px;
-    }
-
-    /* Sobre nosotros */
-
-    .contenedor-sobre-nosotros {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .img-about-us {
-      width: 100%;
-    }
-
-    .sobre-nosotros .contenido-textos {
-      width: 100%;
-      margin: 20px;
-    }
-
-    .contenido-textos p {
-      font-size: 20px;
-      width: 280px;
-      text-align: center;
-    }
-
     /* Carta  */
 
     .img-carta {
@@ -779,5 +709,95 @@ footer {
     .pie-pagina {
       font-size: 20px;
     }
+  }
+}
+/* RESPONSIVE TARJETAS */
+
+@media (max-width: 1024px) {
+  .main-tarjetas .column-4 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-tarjetas .column-4 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .main-tarjetas .column-4 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+}
+/* RESPONSIVE TEXTOS HEADER */
+
+@media (max-width: 768px) {
+  header .textos-header {
+    padding: 115px;
+    margin: auto;
+  }
+  .textos-header h1 {
+    font-size: 85px;
+  }
+  .textos-header h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  header .textos-header {
+    padding: 50px;
+    margin: 50px 0;
+  }
+  .textos-header h1 {
+    font-size: 65px;
+  }
+}
+.textos-header h2 {
+  font-size: 45px;
+}
+
+/* RESPONSIVE HEADER */
+
+@media (max-width: 768px) {
+  .contenedor-sobre-nosotros {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-sobre-nosotros p {
+    text-align: center;
+  }
+}
+
+/* RESPONSIVE NAVBAR */
+
+@media (max-width: 1024px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #nav a {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #nav a {
+    font-size: 20px;
+    align-items: center;
   }
 }
