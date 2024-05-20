@@ -81,7 +81,7 @@ nav > a:hover {
 }
 
 /* Scroll-Top-Button */
-.scroll-top-btn {
+.scrolltop {
   position: fixed;
   z-index: 999;
   bottom: 1vh;
@@ -106,7 +106,7 @@ nav > a:hover {
 
 header .textos-header {
   display: flex;
-  padding: 10rem;
+  padding: 15rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -182,9 +182,15 @@ main .sobre-nosotros {
 .contenido-textos p {
   margin: 10px;
   padding: 20px;
+  font-size: 20px;
+  line-height: 35px;
   font-weight: 300;
   text-align: justify;
   color: black;
+}
+
+.contenido-textos span {
+  font-weight: 700;
 }
 
 /* CARTA */
@@ -380,77 +386,137 @@ main .sobre-nosotros {
 
 /* FORMULARIO REGISTRO */
 
-.formulario-registro {
-  background-color: #ffa663c6;
-}
-
-.formulario {
+.section-contact {
+  width: 100%;
+  padding: 30px 0;
+  max-width: 1000px;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
 }
 
-.formulario__label {
-  display: block;
-  font-weight: 700;
-  padding: 10px;
-  cursor: pointer;
-  margin: 2px;
+.contact-info h2 {
+  margin-bottom: 20px;
+  font: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.formulario__grupo-input {
-  position: relative;
+.contact-info h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
 }
 
-.formulario__input {
-  width: 100%;
-  background-color: white;
-  border: 3px solid transparent;
-  border-radius: 5px;
-  height: 45px;
-  line-height: 45px;
-  padding: 0 40px 0 10px;
-  transition: 0.3s ease all;
+.contact-info p {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 60px;
 }
 
-.formulario__comentario {
-  width: 100%;
-  background-color: white;
-  border: 3px solid transparent;
-  border-radius: 5px;
-  height: 45px;
-  line-height: 45px;
-  padding: 0 40px 0 10px;
-  transition: 0.3s ease all;
+.contact-info .contact-redes {
+  margin-top: 60px;
 }
 
-.formulario__input:focus {
-  border: 3px solid #000000;
-  outline: none;
-  box-shadow: 2px 0px 10px #9e9797;
-}
-
-.formulario__grupo-btn-enviar {
+.contact-info a {
+  font-size: 18px;
   display: flex;
-  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
 }
 
-.formulario__btn {
-  margin: 20px;
-  height: 45px;
-  line-height: 45px;
-  width: 30%;
-  background-color: #fb923c;
-  color: #fff;
-  font-weight: bold;
-  border: none;
+.contact-info a i {
+  margin-right: 10px;
+  color: #59230c;
+  font-size: 20px;
+}
+
+.contact-bg {
+  background-color: rgba(255, 97, 29, 0.789);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form h2 {
+  text-transform: uppercase;
+  padding: 30px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 8px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: 0.1s ease all;
+  border: 2px solid #ffffff;
+  background-color: rgb(255, 232, 222);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.formulario__btn:hover {
-  box-shadow: 3px 0px 20px #ffffff;
+form label {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-check {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.contact-check input {
+  cursor: pointer;
+}
+
+.form-dni {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.form-dni label {
+  margin-top: 14px;
+}
+#contact-dni {
+  background-color: white;
+  margin-left: auto;
+}
+
+form .button-enviar {
+  border-radius: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #fb923c;
+  border: 3.5px solid #ffffff;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+form .button-enviar:hover {
+  transition: 0.3s;
+  background-color: #a35312;
+  color: white;
+}
+
+form label span {
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-weight: lighter;
+}
+
+#spanDni {
+  display: flex;
+  color: red;
+  align-items: center;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -464,7 +530,7 @@ footer {
 
 .contenedor-footer {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-evenly;
   margin: auto;
   padding-bottom: 50px;
@@ -473,16 +539,21 @@ footer {
 
 .content-footer {
   text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ccc;
 }
 .content-footer i {
+  font-size: 22px;
   color: #fff;
-  border-bottom: 5px solid #f7ff93;
+  border-bottom: 3px solid #f7ff93;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-
-.content-footer p {
-  color: #ccc;
+.content-footer i:hover {
+  color: rgb(37, 37, 37);
+  transition: 0.2s;
+  width: 45px;
 }
 
 .pie-pagina {
@@ -590,155 +661,123 @@ footer {
     text-align: center;
   }
 
-  /*Formulario*/
+  /* RESPONSIVE CELULAR */
 
-  .formulario-registro h2 {
-    font-size: 20px;
-    padding: 10px;
-  }
+  @media (100px <= width <= 460px) {
+    nav {
+      display: none;
+    }
 
-  .formulario {
-    grid-template-columns: 1fr;
-  }
+    .textos-header h1 {
+      margin: 200px 0px 30px 0px;
+      font-size: 60px;
+    }
 
-  .formulario__grupo-terminos,
-  .formulario__mensaje,
-  .formulario__grupo-btn-enviar {
-    grid-column: 1;
-  }
+    .textos-header h2 {
+      margin: 50px 0px 0px 0px;
+      font-size: 40px;
+    }
 
-  .formulario__btn {
-    width: 100%;
-  }
-}
+    /* Sobre nosotros */
 
-/* RESPONSIVE CELULAR */
+    .contenedor-sobre-nosotros {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
 
-@media (100px <= width <= 460px) {
-  nav {
-    display: none;
-  }
+    .img-about-us {
+      width: 100%;
+    }
 
-  .textos-header h1 {
-    margin: 200px 0px 30px 0px;
-    font-size: 60px;
-  }
+    .sobre-nosotros .contenido-textos {
+      width: 100%;
+      margin: 20px;
+    }
 
-  .textos-header h2 {
-    margin: 50px 0px 0px 0px;
-    font-size: 40px;
-  }
+    .contenido-textos p {
+      font-size: 20px;
+      width: 280px;
+      text-align: center;
+    }
 
-  /* Sobre nosotros */
+    /* Carta  */
 
-  .contenedor-sobre-nosotros {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+    .img-carta {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .img-about-us {
-    width: 100%;
-  }
+    .img-cart {
+      width: 300px;
+      height: 200px;
+    }
 
-  .sobre-nosotros .contenido-textos {
-    width: 100%;
-    margin: 20px;
-  }
+    .hover-galeria p {
+      font-size: 30px;
+    }
 
-  .contenido-textos p {
-    font-size: 20px;
-    width: 280px;
-    text-align: center;
-  }
+    /* Cards clientess */
 
-  /* Carta  */
+    .cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .img-carta {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .cards .card {
+      height: 350px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .img-cart {
-    width: 300px;
-    height: 200px;
-  }
+    .cards .card img {
+      width: 150px;
+      height: 150px;
+    }
 
-  .hover-galeria p {
-    font-size: 30px;
-  }
+    /* Sucrsales */
 
-  /* Cards clientess */
+    .sucursal-cont {
+      flex-direction: column;
+    }
 
-  .cards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .sucursal-card {
+      width: 100%;
+    }
 
-  .cards .card {
-    height: 350px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .sucursal-card p {
+      margin: 20px;
+    }
 
-  .cards .card img {
-    width: 150px;
-    height: 150px;
-  }
+    /* Footer */
 
-  /* Sucrsales */
+    .contenedor-footer {
+      flex-direction: column;
+      border: none;
+    }
 
-  .sucursal-cont {
-    flex-direction: column;
-  }
+    .content-footer {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-  .sucursal-card {
-    width: 100%;
-  }
+    .content-footer i {
+      border: none;
+    }
 
-  .sucursal-card p {
-    margin: 20px;
-  }
-  /* Formulario */
+    .content-footer p {
+      color: #ccc;
+      border-bottom: 1px solid #ff8000;
+      padding-bottom: 20px;
+    }
 
-  .formulario-registro h2 {
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .formulario {
-    grid-template-columns: 1fr;
-  }
-
-  /* Footer */
-
-  .contenedor-footer {
-    flex-direction: column;
-    border: none;
-  }
-
-  .content-footer {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .content-footer i {
-    border: none;
-  }
-
-  .content-footer p {
-    color: #ccc;
-    border-bottom: 1px solid #ff8000;
-    padding-bottom: 20px;
-  }
-
-  .pie-pagina {
-    font-size: 20px;
+    .pie-pagina {
+      font-size: 20px;
+    }
   }
 }
