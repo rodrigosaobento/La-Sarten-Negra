@@ -649,41 +649,6 @@ footer {
       font-size: 30px;
     }
 
-    /* Cards clientess */
-
-    .cards {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .cards .card {
-      height: 350px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .cards .card img {
-      width: 150px;
-      height: 150px;
-    }
-
-    /* Sucrsales */
-
-    .sucursal-cont {
-      flex-direction: column;
-    }
-
-    .sucursal-card {
-      width: 100%;
-    }
-
-    .sucursal-card p {
-      margin: 20px;
-    }
-
     /* Footer */
 
     .contenedor-footer {
@@ -800,4 +765,46 @@ footer {
     font-size: 20px;
     align-items: center;
   }
+}
+
+@media (100px <= width <= 460px) {
+  
+  
+  /* Cards clientess */
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards .card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  
+  
+  /* Sucursales */
+
+  .sucursal-cont {
+    flex-direction: column;
+  }
+
+  .sucursal-card {
+    width: 100%;
+  }
+
+  .sucursal-card p {
+    margin: 20px;
+  }
+
 }
