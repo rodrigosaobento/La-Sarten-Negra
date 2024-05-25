@@ -769,8 +769,7 @@ footer {
 
 @media (100px <= width <= 460px) {
   
-  
-  /* Cards clientess */
+   /* Cards clientess */
 
   .cards {
     flex-direction: column;
